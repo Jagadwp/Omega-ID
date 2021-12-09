@@ -21,14 +21,18 @@ class UsersTableSeeder extends Seeder
                 'email'=>'admin@gmail.com',
                 'password'=>Hash::make('1111'),
                 'role'=>'admin',
-                'status'=>'active'
+                'status'=>'active',
+                'created_at' => '2021-12-10 03:41:55',
+                'updated_at' => '2021-12-10 03:41:55'
             ),
             array(
                 'name'=>'User',
                 'email'=>'user@gmail.com',
                 'password'=>Hash::make('1111'),
                 'role'=>'user',
-                'status'=>'active'
+                'status'=>'active',
+                'created_at' => '2021-12-10 03:41:55',
+                'updated_at' => '2021-12-10 03:41:55'
             ),
         );
 
