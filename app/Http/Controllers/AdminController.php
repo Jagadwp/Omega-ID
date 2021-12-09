@@ -14,7 +14,7 @@ class AdminController extends Controller
     public function index(){
         $dbconn = env("DB_CONNECTION", "mysql");
         if($dbconn == "pgsql") {
-            $data = User::select(\DB::raw("COUNT(*) as count"), \DB::raw("to_char(created_at, 'Day') as day_name"), \DB::raw("extract(day from date created_at) as day"))
+            $data = User::select(\DB::raw("COUNT(*) as count"), \DB::raw("to_char(created_at, 'Day') as day_name"), \DB::raw("extract(day from created_at) as day"))
             ->where('created_at', '>', Carbon::today()->subDay(6))
             ->groupBy('day_name','day')
             ->orderBy('day')
