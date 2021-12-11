@@ -1554,7 +1554,7 @@ Version:1.0
 	font-size: 22px;
 	font-weight: 700;
 	text-transform: capitalize;
-	color: #333;
+	color: #fff;
 }
 .small-banner .single-banner h3 span{
 	color:#3252DF;
@@ -1611,15 +1611,15 @@ Version:1.0
 	font-size: 27px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #3252DF;
+	color: #fff;
 	line-height: 30px;
 }
 .midium-banner .single-banner h3 span{
-	color:#fff;
+	color:#ec1616;
 }
 .midium-banner .single-banner p {
 	font-size: 13px;
-	color: #ec1616;
+	color: #fff;
 	font-weight: 500;
 	margin-bottom: 5px;
 	text-transform: uppercase;
