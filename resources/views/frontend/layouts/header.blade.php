@@ -51,7 +51,7 @@
                         @php
                             $settings=DB::table('settings')->get();
                         @endphp                    
-                        <a href="{{route('home')}}"><img src="images/logo.png" alt="logo"></a>
+                        <a href="{{route('home')}}"><img src="https://omega-id.herokuapp.com//storage/photos/1/logo.PNG" alt="logo"></a>
                     </div>
                     <!--/ End Logo -->
                     <!-- Search Form -->
