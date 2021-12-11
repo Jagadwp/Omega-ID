@@ -124,7 +124,7 @@ class OrderController extends Controller
         }
         else{
             $order_data['payment_method']='cod';
-            $order_data['payment_status']='Unpaid';
+            $order_data['payment_status']='unpaid';
         }
         $order->fill($order_data);
         $status=$order->save();
