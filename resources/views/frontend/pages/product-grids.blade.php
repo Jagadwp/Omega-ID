@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 
-@section('title','E-SHOP || PRODUCT PAGE')
+@section('title','OmegaID || PRODUCT PAGE')
 
 @section('main-content')
 	<!-- Breadcrumbs -->
@@ -81,17 +81,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{-- <ul class="check-box-list">
-                                            <li>
-                                                <label class="checkbox-inline" for="1"><input name="news" id="1" type="checkbox">$20 - $50<span class="count">(3)</span></label>
-                                            </li>
-                                            <li>
-                                                <label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">$50 - $100<span class="count">(5)</span></label>
-                                            </li>
-                                            <li>
-                                                <label class="checkbox-inline" for="3"><input name="news" id="3" type="checkbox">$100 - $250<span class="count">(8)</span></label>
-                                            </li>
-                                        </ul> --}}
                                     </div>
                                     <!--/ End Shop By Price -->
                                 <!-- Single Widget -->
@@ -265,11 +254,6 @@
                                             <div class="quickview-ratting-review">
                                                 <div class="quickview-ratting-wrap">
                                                     <div class="quickview-ratting">
-                                                        {{-- <i class="yellow fa fa-star"></i>
-                                                        <i class="yellow fa fa-star"></i>
-                                                        <i class="yellow fa fa-star"></i>
-                                                        <i class="yellow fa fa-star"></i>
-                                                        <i class="fa fa-star"></i> --}}
                                                         @php
                                                             $rate=DB::table('product_reviews')->where('product_id',$product->id)->avg('rate');
                                                             $rate_count=DB::table('product_reviews')->where('product_id',$product->id)->count();
@@ -327,15 +311,6 @@
                                                             @endforeach
                                                         </select>
                                                     </div>
-                                                    {{-- <div class="col-lg-6 col-12">
-                                                        <h5 class="title">Color</h5>
-                                                        <select>
-                                                            <option selected="selected">orange</option>
-                                                            <option>purple</option>
-                                                            <option>black</option>
-                                                            <option>pink</option>
-                                                        </select>
-                                                    </div> --}}
                                                 </div>
                                             </div>
                                             <form action="{{route('single-add-to-cart')}}" method="POST">

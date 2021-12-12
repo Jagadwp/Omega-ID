@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 
-@section('title','E-SHOP || Blog Page')
+@section('title','OmegaID || Blog Page')
 
 @section('main-content')
     <!-- Breadcrumbs -->
@@ -57,9 +57,6 @@
                             </div>
                         @endforeach
                         <div class="col-12">
-                            <!-- Pagination -->
-                            {{-- {{$posts->appends($_GET)->links()}} --}}
-                            <!--/ End Pagination -->
                         </div>
                     </div>
                 </div>
