@@ -24,14 +24,6 @@
           @enderror
         </div>
 
-        {{-- <div class="form-group">
-            <label for="inputPassword" class="col-form-label">Password</label>
-          <input id="inputPassword" type="password" name="password" placeholder="Enter password"  value="{{$user->password}}" class="form-control">
-          @error('password')
-          <span class="text-danger">{{$message}}</span>
-          @enderror
-        </div> --}}
-
         <div class="form-group">
         <label for="inputPhoto" class="col-form-label">Photo</label>
         <div class="input-group">
